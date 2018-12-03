@@ -667,8 +667,8 @@ function setup() {
     explanationDiv11 = createDiv('the sliders.')
     explanationDiv12 = createDiv('Watch over the first few tries as the AI');
     explanationDiv13 = createDiv('experiments and learns how to shoot the'); 
-    explanationDiv14 = createDiv('ball to avoid the fire. It will quickly figure');
-    explanationDiv15 = createDiv('out one way to shoot the ball successfully'); 
+    explanationDiv14 = createDiv('ball to avoid the fire. It will quickly find');
+    explanationDiv15 = createDiv('one way to shoot the ball successfully'); 
     explanationDiv16 = createDiv('no matter which way the fire is facing.');
     explanationDiv1.style('position',width+20,15); 
     explanationDiv2.style('position',width+20,35); 
