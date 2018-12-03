@@ -78,6 +78,12 @@ let explanationDiv7;
 let explanationDiv8;
 let explanationDiv9;
 let explanationDiv10;
+let explanationDiv11;
+let explanationDiv12;
+let explanationDiv13;
+let explanationDiv14;
+let explanationDiv15;
+let explanationDiv16;
 
 // Variables detemrinig display of DOM variables
 let button_press = 0;
@@ -649,25 +655,37 @@ function setup() {
     button2.mousePressed(go_button);
     // Explanatory text for the game
     explanationDiv1 = createDiv('Instructions for the Game:');
-    explanationDiv2 = createDiv('The goal is to shoot the ball to the other side. Hit the fire and you lose.')
-    explanationDiv3 = createDiv('Adjust the "Upward Force" and "Rightward Force" sliders to control the'); 
-    explanationDiv4 = createDiv('angle of the shot. Press the "Go!" button to shoot.');
-    explanationDiv5 = createDiv('There are two possible players: You and an AI bot. Hit the "Let AI Try"');
-    explanationDiv6 = createDiv('button to activate the AI. From now on when you press the "Go!" button');
-    explanationDiv7 = createDiv('the AI will set the sliders.');
-    explanationDiv8 = createDiv('Watch over the first few tries as the AI experiments and learns how to'); 
-    explanationDiv9 = createDiv('shoot the ball to avoid the fire. It will quickly figure out one way to'); 
-    explanationDiv10 = createDiv('shoot the ball successfully no matter which way the fire is facing.');
-    explanationDiv1.style('position',width+20,20); 
-    explanationDiv2.style('position',width+20,40); 
-    explanationDiv3.style('position',width+20,60); 
-    explanationDiv4.style('position',width+20,80);
-    explanationDiv5.style('position',width+20,120);
-    explanationDiv6.style('position',width+20,140);
-    explanationDiv7.style('position',width+20,160);
-    explanationDiv8.style('position',width+20,200);
-    explanationDiv9.style('position',width+20,220);
-    explanationDiv10.style('position',width+20,240);
+    explanationDiv2 = createDiv('The goal is to shoot the ball to the other')
+    explanationDiv3 = createDiv('side. Hit the fire and you lose. Adjust')
+    explanationDiv4 = createDiv('the "Upward Force" and "Rightward');
+    explanationDiv5 = createDiv('Force" sliders to control the angle of');
+    explanationDiv6 = createDiv('the shot. Press the "Go!" button to shoot.');
+    explanationDiv7 = createDiv('There are two possible players: You and');
+    explanationDiv8 = createDiv('an AI bot. Hit the "Let AI Try" button to');
+    explanationDiv9 = createDiv('activate the AI. From now on when you');
+    explanationDiv10 = createDiv('press the "Go!" button the AI will set');
+    explanationDiv11 = createDiv('the sliders.')
+    explanationDiv12 = createDiv('Watch over the first few tries as the AI');
+    explanationDiv13 = createDiv('experiments and learns how to shoot the'); 
+    explanationDiv14 = createDiv('ball to avoid the fire. It will quickly figure');
+    explanationDiv15 = createDiv('out one way to shoot the ball successfully'); 
+    explanationDiv16 = createDiv('no matter which way the fire is facing.');
+    explanationDiv1.style('position',width+20,15); 
+    explanationDiv2.style('position',width+20,35); 
+    explanationDiv3.style('position',width+20,55); 
+    explanationDiv4.style('position',width+20,75);
+    explanationDiv5.style('position',width+20,95);
+    explanationDiv6.style('position',width+20,115);
+    explanationDiv7.style('position',width+20,145);
+    explanationDiv8.style('position',width+20,165);
+    explanationDiv9.style('position',width+20,185);
+    explanationDiv10.style('position',width+20,205);
+    explanationDiv11.style('position',width+20,225);
+    explanationDiv12.style('position',width+20,255);
+    explanationDiv13.style('position',width+20,275);
+    explanationDiv14.style('position',width+20,295);
+    explanationDiv15.style('position',width+20,315);
+    explanationDiv16.style('position',width+20,335);
     // Set the values for the wind vector to random values 
     dx = random(-0.2,0.2);
     dy = random(0,-0.2);
