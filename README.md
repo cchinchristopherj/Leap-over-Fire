@@ -5,6 +5,9 @@ AI Beats Game using Deep Q Learning
 
 Advancements in Reinforcement Learning (RL) have allowed AI to learn how to perform complex actions and behaviors, such as famously beating a human player at the game of Go, solely based on reward signals from their environment instead of annotated input/output pairs as in supervised learning. In this game, an AI will use one of the most popular algorithms from RL, Deep Q Learning, to learn how to safely shoot a ball over a fire. 
 
+Web Application
+=========================
+
 Starting Screen:
 
 ![humanplayer](https://github.com/cchinchristopherj/Leap-over-Fire/blob/cchinchristopherj-patch-1/Images/humanplayer.png)
@@ -14,6 +17,9 @@ During the "Player: You" mode of the game, the fire will change to a different p
 Interestingly, an AI agent will not take this approach. The "Let AI Play" button can be pressed to switch to "Player: AI" mode, during which the AI will set the positions of the sliders based on its growing set of learned experiences.
 
 ![aiplayer](https://github.com/cchinchristopherj/Leap-over-Fire/blob/cchinchristopherj-patch-1/Images/aiplayer.png)
+
+Deep Reinforcement Learning
+=========================
 
 Classically, Deep Q Learning is implemented via Q-tables, which have as many rows as possible states and as many columns as possible actions, with the value of each cell being the maximum expected future reward (Q-value) for the given state and action. As the agent performs actions and receives rewards, these Q-values are updated using the Bellman Equation. New Q-values are a function of the received reward for the chosen action and the maximum expected future reward given all possible actions in the new state. 
 
