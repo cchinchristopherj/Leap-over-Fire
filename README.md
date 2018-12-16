@@ -25,13 +25,13 @@ Classically, Deep Q Learning is implemented via Q-tables, which have as many row
 
 ![bellmanequation](https://github.com/cchinchristopherj/Leap-over-Fire/blob/master/bellmanequation.png)
 
-*Bellman Equation. Image Source: [Diving Deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)
+*Bellman Equation. Image Source: [Diving Deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)*
     
 For this game, classical Q-tables will be replaced by deep learning: the AI agent will be represented by a shallow multi-layer perceptron, which receives as input variables describing the spatial extent of the fire (a human would likewise be able to see where the fire is located on the screen). The output of the neural network is the approximate Q-value of each action for each state, with there being sixteen possible actions (sixteen possible quantized configurations of the sliders controlling the rightward and upward force exerted on the ball). 
 
 ![deeplearning_qvalues](https://github.com/cchinchristopherj/Leap-over-Fire/blob/master/deeplearning_qvalues.png)
 
-*Deep Learning Replaces Q-Tables. Image Source: [An introduction to Deep Q-Learning: let's play Doom](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8)
+*Deep Learning Replaces Q-Tables. Image Source: [An introduction to Deep Q-Learning: let's play Doom](https://medium.freecodecamp.org/an-introduction-to-deep-q-learning-lets-play-doom-54d02d8017d8)*
 
 The action corresponding to the highest Q-value is the one chosen to be executed and a reward is received if the ball makes it safely to the other side. 
 
@@ -39,6 +39,6 @@ It is important to note that, at the beginning, the AI agent has no knowledge of
 
 ![exploration_exploitation](https://github.com/cchinchristopherj/Leap-over-Fire/blob/master/exploration_exploitation.png)
 
-*Exploration-Exploitation Tradeoff. Image Source: [Diving Deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)
+*Exploration-Exploitation Tradeoff. Image Source: [Diving Deeper into Reinforcement Learning with Q-Learning](https://medium.freecodecamp.org/diving-deeper-into-reinforcement-learning-with-q-learning-c18d0db58efe)*
 
 A global value called "epsilon" determines which of these two strategies should be adopted. (If a random number between 0 and 1 is less than the value of "epsilon", an exploration strategy is taken, i.e. a randomly chosen action. On the other hand, if a random number between 0 and 1 is greater than the value of "epsilon," an exploitation strategy is taken, i.e. an action based on prior experience. "Epsilon" is initialized to 1 and decreased gradually with every session of the game so that exploitation is adopted more often than exploration over time.
